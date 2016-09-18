@@ -1,4 +1,5 @@
-/#############################################################
+#############################################################
+
 # Copyright 2016.
 
 This program is free software: you can redistribute it and/or modify
@@ -13,7 +14,8 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-/#############################################################
+
+#############################################################
 
  Contact:		Jhon Preliom
  Blog:			Twitter/Hackademics
@@ -25,7 +27,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  Dependencies: 	LibWhisker
 			Getopt::Long
 			OSVDB API Key (optional): http://osvdb.org/api/about
+			
 #############################################################
+
 # About
 
 This program attempts to brute-force guess the plugins and themes
@@ -60,6 +64,7 @@ osvdb.org and put your API key in a file named 'osvdb.key'. An account
 gives you 100 queries per day, or make a donation for a higher limit.
 
 #############################################################
+
 # Requirements
 
 This program requires:
@@ -68,6 +73,7 @@ This program requires:
 - OSVDB API Key (optional): http://osvdb.org/api/about
 
 #############################################################
+
 #Limitations
 - Plugin and theme names are from the base directory checked-in to the 
   Wordpress or Drupal repo. In some cases, this top-level directory 
@@ -77,6 +83,7 @@ This program requires:
   send them over or commit them to the source tree!
 
 #############################################################
+
 #Options	
 	-bsproxy+ 	Proxy to route findings through (format: host:ip
 			or http://host:ip/, default port 80)
@@ -95,6 +102,7 @@ This program requires:
 	-verbosity+ 	1-3
 
 #############################################################
+
 #Examples
 - Test for Wordpress plugins/themes on example.com, low verbosity and 
   explore using the bootstrap proxy 'localhost' on port 8080 and auto-guess type
