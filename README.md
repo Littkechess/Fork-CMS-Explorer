@@ -14,18 +14,19 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #############################################################
-# Contact:		Jhon Preliom
-# Blog:			Twitter/Hackademics
-#
-# Program Name:		CMS Explorer Updated
-# Purpose:		Look for installed plugins/themes for a CMS
-# Version:		Updated
-# Code Repo:		http://code.google.com/p/cms-explorer/
-# Dependencies: 	LibWhisker
-#			Getopt::Long
-#			OSVDB API Key (optional): http://osvdb.org/api/about
+ Contact:		Jhon Preliom
+ Blog:			Twitter/Hackademics
+
+ Program Name:		CMS Explorer Updated
+ Purpose:		Look for installed plugins/themes for a CMS
+ Version:		Updated
+ Code Repo:		http://code.google.com/p/cms-explorer/
+ Dependencies: 	LibWhisker
+			Getopt::Long
+			OSVDB API Key (optional): http://osvdb.org/api/about
 #############################################################
-About
+# About
+
 This program attempts to brute-force guess the plugins and themes
 installed in a CMS by requesting each plugin or theme name and 
 looking at the response codes. 
@@ -58,14 +59,15 @@ osvdb.org and put your API key in a file named 'osvdb.key'. An account
 gives you 100 queries per day, or make a donation for a higher limit.
 
 #############################################################
-Requirements
+# Requirements
+
 This program requires:
 - Getopt::Long perl module
 - LibWhisker (LW2) included, or from http://www.wiretrip.net/rfp/lw.asp
 - OSVDB API Key (optional): http://osvdb.org/api/about
 
 #############################################################
-Limitations
+#Limitations
 - Plugin and theme names are from the base directory checked-in to the 
   Wordpress or Drupal repo. In some cases, this top-level directory 
   does *not* match the install directory name.
@@ -74,7 +76,7 @@ Limitations
   send them over or commit them to the source tree!
 
 #############################################################
-Options	
+#Options	
 	-bsproxy+ 	Proxy to route findings through (format: host:ip
 			or http://host:ip/, default port 80)
 	-explore	Look for files in the theme/plugin dir
@@ -92,7 +94,7 @@ Options
 	-verbosity+ 	1-3
 
 #############################################################
-Examples
+#Examples
 - Test for Wordpress plugins/themes on example.com, low verbosity and 
   explore using the bootstrap proxy 'localhost' on port 8080 and auto-guess type
 	./cms-explorer.pl -url http://example.com/ -v 1 -bsproxy \ 
